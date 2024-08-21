@@ -28,5 +28,20 @@
 </header>
 <body>
 
+	<form action="../index.html" target="_self" method="post">
+		<label for="lname">Primeiro Nome</label>
+		<input type="text" id="lname" name="lname" placeholder="Fabio" required><br>
+		<label for="lsubname">Sobrenome</label>
+		<input type="text" id="lsubname" name="lsubname" placeholder="da Silva"><br>
+		<label for="lemail">Email</label>
+		<input type="email" id="lemail" name="lemail" placeholder="oseuemail@email.com.br" required><br>
+		<label for="lsenha">Digite a sua Senha</label>
+		<input type="password" id="lsenha" name="lsenha" required>
+		<label for="lsenha2">Confirme a sua Senha</label>
+		<input type="password" id="lsenha2" name="lsenha2" required><br>
+		<input type="submit" id="enviar" name="enviar" value="Enviar" onclick="alert('Cadastro realizado com sucesso!\nFaça login para ter acesso a sua conta.')">
+		<input type="reset" id="limpar" name="limpar" value="Limpar">
+	</form>
+
 </body>
 </html>
