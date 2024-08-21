@@ -28,6 +28,22 @@
 </header>
 <body>
 
+<script>
+function verifica()
+{
+var x;
+
+var nome=lname;
+var email=lemail;
+var senha=lsenha;
+var senha2=lsenha2;
+
+if (nome!=null || email!=null || senha!=null || senha2!=null){
+  alert('Cadastro realizado com sucesso!\nFaça login para ter acesso asua conta.');
+  }
+}
+</script>
+
 	<form action="../index.html" target="_self" method="post">
 		<label for="lname">Primeiro Nome</label>
 		<input type="text" id="lname" name="lname" placeholder="Fabio" required><br>
@@ -39,7 +55,7 @@
 		<input type="password" id="lsenha" name="lsenha" required>
 		<label for="lsenha2">Confirme a sua Senha</label>
 		<input type="password" id="lsenha2" name="lsenha2" required><br>
-		<input type="submit" id="enviar" name="enviar" value="Enviar" onclick="alert('Cadastro realizado com sucesso!\nFaça login para ter acesso a sua conta.')">
+		<input type="submit" id="enviar" name="enviar" value="Enviar" onclick="verifica()">
 		<input type="reset" id="limpar" name="limpar" value="Limpar">
 	</form>
 
