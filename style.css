@@ -24,10 +24,26 @@
 	list-style-type: none;
 	text-decoration: none;
 	color: #fff;
-	position: absolute;
+	position: relative;
 	display: inline;
-	margin-left: 50px;
-	margin-right: 50px;
-	right: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	right: -150px;
 
+}
+
+.search {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: -210px;
+	top: -2px;
+}
+
+.perfil {
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	right: -190px;
+	top: -4px;
 }
