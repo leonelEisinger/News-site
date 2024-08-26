@@ -47,3 +47,38 @@
 	right: -190px;
 	top: -4px;
 }
+
+body section {
+	float: left;
+	border: 1px solid rgba(0, 0, 0, .2);
+	width: 300px;
+	margin-left: 12px;
+
+}
+
+body section img {
+	width:200px;
+	height:100px;
+}
+
+section {
+	position: relative;
+	top: 50px;
+
+}
+
+section.destaques {
+	border-left: 0px;
+	border-right: 0px;
+}
+
+section.destaques2 {
+	border-left: 0px;
+}
+section.esporte {
+
+	border-left: 0px;
+	border-right: 0px;
+}
+
+
