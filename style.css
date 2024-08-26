@@ -67,6 +67,17 @@ section {
 
 }
 
+section div {
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+section div.finaldestaque {
+	border-bottom: 0;
+}
+section div.homempresosinal{
+	border-bottom: 0;
+}
+
 section.destaques {
 	border-left: 0px;
 	border-right: 0px;
@@ -75,10 +86,17 @@ section.destaques {
 section.destaques2 {
 	border-left: 0px;
 }
-section.esporte {
 
+section.internacional {
 	border-left: 0px;
 	border-right: 0px;
 }
+
+section.pop {
+	border-left: 0px;
+	border-right: 0px;
+}
+
+
 
 
