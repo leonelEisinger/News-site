@@ -28,8 +28,21 @@
 
 </header>
 <body>
-
-  <iframe width="500" height="300" src="https://www.youtube.com/embed/JO7zhAKOUZU?embed_config=%7B%22adsConfig%22%3A%7B%22disableAds%22%3Atrue%7D%2C%22enableIma%22%3Atrue%7D&enablejsapi=1&origin=https%3A%2F%2Fwww.cnnbrasil.com.br&widgetid=1"></iframe>
+	
+	<iframe src="https://www.youtube.com/embed/JO7zhAKOUZU?embed_config=%7B%22adsConfig%22%3A%7B%22disableAds%22%3Atrue%7D%2C%22enableIma%22%3Atrue%7D&enablejsapi=1&origin=https%3A%2F%2Fwww.cnnbrasil.com.br&widgetid=1"></iframe> 
+<div id="video-controls" class="controls" data-state="hidden">
+  <button id="playpause" type="button" data-state="play">Play/Pause</button>
+  <button id="stop" type="button" data-state="stop">Stop</button>
+  <div class="progress">
+    <progress id="progress" value="0" min="0">
+      <span id="progress-bar"></span>
+    </progress>
+  </div>
+  <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+  <button id="volinc" type="button" data-state="volup">Vol+</button>
+  <button id="voldec" type="button" data-state="voldown">Vol-</button>
+  <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+</div>
 
 </body>
 </html>
