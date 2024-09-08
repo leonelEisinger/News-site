@@ -1,1 +1,1 @@
-Trying to reacreate a news site, very basic HTML and CSS.
+Trying to reacreate a news site, very basic HTML, CSS and JavaScript.
