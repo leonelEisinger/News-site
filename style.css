@@ -1,4 +1,119 @@
-#banner{
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Estilo do banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc0000;
+    padding: 20px;
+}
+
+#figure img {
+    width: 150px;
+}
+
+#navBanner ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#navBanner ul li {
+    margin: 0 15px;
+}
+
+#navBanner ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navBanner ul li a:hover {
+    text-decoration: underline;
+}
+
+#search, #perfil {
+    width: 30px;
+}
+
+/* Destaques principais */
+section {
+    margin-top: 40px;
+}
+
+#destaques, #destaques2, #internacional, #esporte, #pop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#destaques h3, #destaques2 h3, #internacional h3, #esporte h3, #pop h3 {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #cc0000;
+}
+
+#destaques div, #destaques2 div, #internacional div, #esporte div, #pop div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#destaques img, #destaques2 img, #internacional img, #esporte img, #pop img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#destaques a, #destaques2 a, #internacional a, #esporte a, #pop a {
+    text-decoration: none;
+    color: #333;
+}
+
+#destaques a:hover, #destaques2 a:hover, #internacional a:hover, #esporte a:hover, #pop a:hover {
+    color: #cc0000;
+}
+
+/* Ajustes específicos para seções */
+.finaldestaque, .homempresosinal {
+    flex: 100%;
+}
+
+.finaldestaque a {
+    display: block;
+    margin-top: 10px;
+}
+
+#destaques img, #internacional img, #esporte img, #pop img {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #destaques div, #destaques2 div, #internacional div, #esporte div, #pop div {
+        max-width: 100%;
+    }
+}
+
+/*#banner{
 	background-color: #000;
 	color: #fff;
 	height: 50px;
