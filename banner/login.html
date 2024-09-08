@@ -45,13 +45,25 @@
                 <input type="text" id="username" name="username" required>
             </div>
             <div class="input-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
+                <label for="cpf">CPF</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+            <div class="input-group">
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="input-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
             </div>
             <button type="submit" class="btn">Entrar</button>
             <p id="loginMessage"></p>
         </form>
-        <p>Não tem uma conta? <a href="#" id="registerLink">Cadastre-se aqui</a></p>
+        <p>Não possui uma conta? <a href="register.html" id="loginLink">Cadastre-se aqui</a></p>
     </div>
 
     <script src="login.js"></script>

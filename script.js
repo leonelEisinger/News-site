@@ -36,9 +36,3 @@ loginForm.addEventListener('submit', function(event) {
     loginMessage.textContent = "Login realizado com sucesso!";
     loginMessage.style.color = "green";
 });
-
-refForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    loginMessage.textContent = "Cadastro realizado com sucesso!";
-    loginMessage.style.color = "green";
-});

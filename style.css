@@ -11,6 +11,7 @@ body {
     padding: 20px;
 }
 
+/* Banner e navegação */
 .banner {
     display: flex;
     justify-content: space-between;
@@ -50,6 +51,88 @@ section {
     margin-top: 40px;
 }
 
+/* Formulário de login */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#loginMessage {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container p {
+    text-align: center;
+}
+
+.login-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 100%;
+    }
+}
+
+/* Destaques e outros elementos */
 #destaques, #destaques2, #internacional, #esporte, #pop {
     display: flex;
     justify-content: space-between;
@@ -89,7 +172,6 @@ section {
     color: #cc0000;
 }
 
-
 .finaldestaque, .homempresosinal {
     flex: 100%;
 }
@@ -109,6 +191,7 @@ section {
     }
 }
 
+/* Formulário de busca */
 #searchForm {
     margin: 20px 0;
     text-align: center;
@@ -136,6 +219,7 @@ section {
     background-color: #b30000;
 }
 
+/* Vídeo */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; 
@@ -154,70 +238,104 @@ section {
     border: 0;
 }
 
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+.logo-container img {
+    width: 150px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #cc0000;
+.nav-banner ul {
+    list-style-type: none;
+    display: flex;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.nav-banner ul li {
+    margin: 0 15px;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #cc0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #ff3300;
-}
-
-p {
-    text-align: center;
-    margin-top: 15px;
-}
-
-a {
-    color: #cc0000;
+.nav-banner ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
+.nav-banner ul li a:hover {
     text-decoration: underline;
 }
 
-#loginMessage {
-    margin-top: 10px;
+/* Notícia */
+.noticia-container {
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.noticia {
+    margin-bottom: 20px;
+}
+
+.noticia-titulo {
+    font-size: 32px;
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+.noticia-meta {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.noticia-meta .autor {
+    font-weight: bold;
+}
+
+.noticia-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.noticia-imagem figcaption {
+    font-size: 12px;
+    color: #777;
     text-align: center;
-    color: green;
+}
+
+.noticia-corpo p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #cc0000;
+    color: white;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .noticia-container {
+        padding: 15px;
+    }
+
+    .noticia-titulo {
+        font-size: 24px;
+    }
+
+    .nav-banner ul li {
+        margin: 0 10px;
+    }
 }
